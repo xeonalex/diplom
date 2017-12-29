@@ -1,0 +1,34 @@
+{
+  "name": "Landlord",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "surname": {
+      "type": "string",
+      "required": true
+    },
+    "birth_date": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
