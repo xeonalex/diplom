@@ -1,0 +1,28 @@
+{
+  "name": "Equivalent",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "year": {
+      "type": "number",
+      "required": true
+    },
+    "price": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "rentingWays": {
+      "type": "hasOne",
+      "model": "RentingWay",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

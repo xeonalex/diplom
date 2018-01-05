@@ -1,0 +1,39 @@
+{
+  "name": "Rent",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "year": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "landlords": {
+      "type": "hasOne",
+      "model": "Landlord",
+      "foreignKey": ""
+    },
+    "rentingWays": {
+      "type": "hasOne",
+      "model": "RentingWay",
+      "foreignKey": ""
+    },
+    "landshares": {
+      "type": "hasOne",
+      "model": "Landshare",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,49 +1,47 @@
 {
-  "name": "Landshare",
+  "name": "Contract",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "cadastral_num": {
-      "type": "number",
+    "number": {
+      "type": "string",
       "required": true
     },
-    "area": {
-      "type": "number",
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "validity": {
+      "type": "string",
+      "required": true
+    },
+    "expiration_date": {
+      "type": "date",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "status": {
-      "type": "belongsTo",
-      "model": "Status",
-      "foreignKey": ""
-    },
-    "field": {
-      "type": "belongsTo",
-      "model": "Field",
-      "foreignKey": ""
-    },
-    "farm": {
-      "type": "belongsTo",
-      "model": "Farm",
-      "foreignKey": ""
-    },
     "landlord": {
       "type": "belongsTo",
       "model": "Landlord",
       "foreignKey": ""
     },
-    "rents": {
-      "type": "hasMany",
-      "model": "Rent",
-      "foreignKey": ""
+    "landshare": {
+      "type": "belongsTo",
+      "model": "Landshare",
+      "foreignKey": "",
+    },
+    "farm": {
+      "type": "belongsTo",
+      "model": "Farm",
+      "foreignKey": "",
     },
     "landlords": {
-      "type": "hasMany",
+      "type": "hasOne",
       "model": "Landlord",
       "foreignKey": ""
     }

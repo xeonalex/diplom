@@ -1,0 +1,28 @@
+{
+  "name": "Field",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "area": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "farm": {
+      "type": "belongsTo",
+      "model": "Farm",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

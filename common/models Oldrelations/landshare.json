@@ -1,0 +1,33 @@
+{
+  "name": "Landshare",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cadastral_num": {
+      "type": "number",
+      "required": true
+    },
+    "area": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "farms": {
+      "type": "hasOne",
+      "model": "Farm",
+      "foreignKey": ""
+    },
+    "fields": {
+      "type": "hasOne",
+      "model": "Field",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

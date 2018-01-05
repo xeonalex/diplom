@@ -6,7 +6,6 @@
   "mysql": {
     "host": "localhost",
     "port": 3306,
-    "url": "localhost",
     "database": "diploma",
     "password": "toor",
     "name": "mysql",

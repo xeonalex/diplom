@@ -35,11 +35,67 @@
     "dataSource": "db",
     "public": false
   },
+  "Person": {
+    "dataSource": "mysql",
+    "public": true
+  },
   "Landlord": {
     "dataSource": "mysql",
     "public": true
   },
   "Landshare": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "RentingWay": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Rent": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "AnnualRent": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Contract": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Address": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Status": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "OwnershipRight": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Issuance": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Equivalent": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Farm": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Place": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Employee": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Field": {
     "dataSource": "mysql",
     "public": true
   }

@@ -1,0 +1,39 @@
+{
+  "name": "Farm",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "place": {
+      "type": "belongsTo",
+      "model": "Place",
+      "foreignKey": ""
+    },
+    "issuance": {
+      "type": "belongsTo",
+      "model": "Issuance",
+      "foreignKey": ""
+    },
+    "employees": {
+      "type": "hasOne",
+      "model": "Employee",
+      "foreignKey": ""
+    },
+    "address": {
+      "type": "hasOne",
+      "model": "Picture",
+      "polymorphic": "imageable"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

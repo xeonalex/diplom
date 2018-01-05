@@ -1,0 +1,37 @@
+{
+  "name": "Person",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "surname": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "landlord": {
+      "type": "belongsTo",
+      "model": "Landlord",
+      "foreignKey": ""
+    },
+    "address": {
+      "type": "hasOne",
+      "model": "Picture",
+      "polymorphic": "imageable"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

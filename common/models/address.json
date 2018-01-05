@@ -1,0 +1,46 @@
+{
+  "name": "Address",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "region": {
+      "type": "string",
+      "required": true
+    },
+    "town": {
+      "type": "string",
+      "required": true
+    },
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "house_num": {
+      "type": "string",
+      "required": true
+    },
+    "flat_num": {
+      "type": "string"
+    },
+    "post_code": {
+      "type": "number",
+      "required": true
+    },
+    "tel": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "addressable": {
+      "type": "belongsTo",
+      "polymorphic": true
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

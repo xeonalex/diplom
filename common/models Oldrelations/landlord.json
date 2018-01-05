@@ -13,33 +13,33 @@
   },
   "validations": [],
   "relations": {
-    "rents": {
-      "type": "hasMany",
+    "rent": {
+      "type": "belongsTo",
       "model": "Rent",
       "foreignKey": ""
     },
-    "contracts": {
+    "people": {
       "type": "hasOne",
-      "model": "Contract",
-      "foreignKey": ""
-    },
-    "person": {
-      "type": "belongsTo",
       "model": "Person",
       "foreignKey": ""
     },
-    "landshare": {
-      "type": "belongsTo",
+    "landshares": {
+      "type": "hasOne",
       "model": "Landshare",
-      "foreignKey": ""
-    },
-    "ownershipRight": {
-      "type": "belongsTo",
-      "model": "OwnershipRight",
       "foreignKey": ""
     },
     "contract": {
       "type": "belongsTo",
+      "model": "Contract",
+      "foreignKey": ""
+    },
+    "ownershipRights": {
+      "type": "hasOne",
+      "model": "OwnershipRight",
+      "foreignKey": ""
+    },
+    "contracts": {
+      "type": "hasOne",
       "model": "Contract",
       "foreignKey": ""
     }

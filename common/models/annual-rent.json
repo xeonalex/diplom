@@ -1,0 +1,22 @@
+{
+  "name": "AnnualRent",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "year": {
+      "type": "number",
+      "required": true
+    },
+    "amount": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

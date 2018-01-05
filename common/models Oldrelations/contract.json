@@ -1,0 +1,51 @@
+{
+  "name": "Contract",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "number": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "validity": {
+      "type": "string",
+      "required": true
+    },
+    "expiration_date": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "landlord": {
+      "type": "belongsTo",
+      "model": "Landlord",
+      "foreignKey": ""
+    },
+    "landlords": {
+      "type": "hasOne",
+      "model": "Landlord",
+      "foreignKey": ""
+    },
+    "landshares": {
+      "type": "hasOne",
+      "model": "Landshare",
+      "foreignKey": ""
+    },
+    "farms": {
+      "type": "hasOne",
+      "model": "Farm",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

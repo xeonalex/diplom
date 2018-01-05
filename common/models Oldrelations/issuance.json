@@ -1,0 +1,43 @@
+{
+  "name": "Issuance",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "amount": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "landlords": {
+      "type": "hasOne",
+      "model": "Landlord",
+      "foreignKey": ""
+    },
+    "farms": {
+      "type": "hasOne",
+      "model": "Farm",
+      "foreignKey": ""
+    },
+    "employees": {
+      "type": "hasOne",
+      "model": "Employee",
+      "foreignKey": ""
+    },
+    "places": {
+      "type": "hasOne",
+      "model": "Place",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
